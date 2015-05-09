@@ -1,0 +1,139 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".BlogTransitionActivity"
+        tools:listitem="@layout/grid_view_item" />
+
+
+    <!--android:visibility="gone"-->
+    <View
+        android:id="@+id/backgroundView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+    </View>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:alpha="0"/>
+
+    <ScrollView
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:alpha="0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <View
+                android:id="@+id/tintViewFront"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="200dp"
+                android:background="@android:color/holo_blue_light" />
+
+
+            <View
+                android:id="@+id/indicatorView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="245dp"
+                android:background="#00000000" />
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/subTitle"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="88dp"
+                android:layout_marginStart="88dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:singleLine="true"
+                android:text="New Apple accessories for you"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+            <TextView
+                android:id="@+id/subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/indicatorView"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="88dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="Mon Apr 27  10:48 PM"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tintViewFront"
+                android:paddingTop="22dp"
+                android:paddingBottom="22dp"
+                android:paddingLeft="88dp"
+                android:paddingRight="8dp"
+                android:background="#fff"
+                android:text="@string/big_text" />
+
+            <ImageButton
+                android:id="@+id/btnLike"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="22dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="268dp"
+                android:background="@drawable/btn_circle_bg"
+                android:src="@drawable/ic_action_favorite" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>
+
+
+
