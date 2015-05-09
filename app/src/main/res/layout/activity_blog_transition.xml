@@ -53,7 +53,7 @@
             <View
                 android:id="@+id/tintViewFront"
                 android:layout_width="match_parent"
-                android:layout_height="90dp"
+                android:layout_height="@dimen/blog_tint_view_height"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
@@ -116,8 +116,8 @@
 
             <ImageButton
                 android:id="@+id/btnLike"
-                android:layout_width="44dp"
-                android:layout_height="44dp"
+                android:layout_width="@dimen/blog_btn_like_dim"
+                android:layout_height="@dimen/blog_btn_like_dim"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_marginLeft="22dp"

@@ -31,9 +31,9 @@ public class BlogTransitionActivity extends AppCompatActivity {
 
     private ArrayList<Blog> mBlogList;
 
-    private int mShortAnimationDuration = 200;
-    private int mDelayAnimationDuration = 40;
-    private int mLikeButtonAnimationDuration = 120;
+    private static final int SHORT_ANIMATION_DURATION = 200;
+    private static final int DELAY_ANIMATION_DURATION = 40;
+    private static final int LIKE_BTN_ANIMATION_DURATION = 120;
 
     private RecyclerView mRecyclerView;
     private ImageView mImageView;
@@ -183,7 +183,7 @@ public class BlogTransitionActivity extends AppCompatActivity {
         // Set of animators to play all of animators together.
         AnimatorSet backgroundViewAnimatorSet  = new AnimatorSet();
         backgroundViewAnimatorSet.setInterpolator(new AccelerateInterpolator());
-        backgroundViewAnimatorSet.setDuration(mShortAnimationDuration);
+        backgroundViewAnimatorSet.setDuration(SHORT_ANIMATION_DURATION);
         backgroundViewAnimatorSet.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
@@ -211,8 +211,8 @@ public class BlogTransitionActivity extends AppCompatActivity {
         // Set of animators to play all of animators together.
         AnimatorSet mContentLayoutAnimatorSet  = new AnimatorSet();
         mContentLayoutAnimatorSet.setInterpolator(new AccelerateInterpolator());
-        mContentLayoutAnimatorSet.setStartDelay(mDelayAnimationDuration);
-        mContentLayoutAnimatorSet.setDuration(mShortAnimationDuration);
+        mContentLayoutAnimatorSet.setStartDelay(DELAY_ANIMATION_DURATION);
+        mContentLayoutAnimatorSet.setDuration(SHORT_ANIMATION_DURATION);
         mContentLayoutAnimatorSet.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
@@ -233,7 +233,7 @@ public class BlogTransitionActivity extends AppCompatActivity {
     }
 
     private void animateLikeButton() {
-        btnLike.animate().setDuration(mLikeButtonAnimationDuration).scaleX(1f).scaleY(1f);
+        btnLike.animate().setDuration(LIKE_BTN_ANIMATION_DURATION).scaleX(1f).scaleY(1f);
     }
 
 
@@ -256,7 +256,7 @@ public class BlogTransitionActivity extends AppCompatActivity {
         AnimatorSet mContentLayoutAnimatorSet  = new AnimatorSet();
         mContentLayoutAnimatorSet.setInterpolator(new AccelerateInterpolator());
         mContentLayoutAnimatorSet.setStartDelay(0);
-        mContentLayoutAnimatorSet.setDuration(mShortAnimationDuration);
+        mContentLayoutAnimatorSet.setDuration(SHORT_ANIMATION_DURATION);
         mContentLayoutAnimatorSet.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
@@ -301,8 +301,8 @@ public class BlogTransitionActivity extends AppCompatActivity {
         // Set of animators to play all of animators together.
         AnimatorSet backgroundViewAnimatorSet = new AnimatorSet();
         backgroundViewAnimatorSet.setInterpolator(new AccelerateInterpolator());
-        backgroundViewAnimatorSet.setStartDelay(mDelayAnimationDuration);
-        backgroundViewAnimatorSet.setDuration(mShortAnimationDuration);
+        backgroundViewAnimatorSet.setStartDelay(DELAY_ANIMATION_DURATION);
+        backgroundViewAnimatorSet.setDuration(SHORT_ANIMATION_DURATION);
         backgroundViewAnimatorSet.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {

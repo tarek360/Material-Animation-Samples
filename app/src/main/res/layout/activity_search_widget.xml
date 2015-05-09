@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:clipToPadding="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/ivIconBar"
+            android:layout_width="@dimen/search_stroke_width"
+            android:layout_height="@dimen/search_bar_height"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="25dp"
+            android:rotation="-45"
+            android:src="@color/color_stroke" />
+
+        <RelativeLayout
+            android:id="@+id/layoutSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/bg_search">
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="@dimen/search_oval_width"
+                android:layout_height="@dimen/search_oval_width"
+                android:background="@null"
+                android:paddingLeft="@dimen/search_oval_width_half"
+                android:paddingRight="@dimen/search_oval_width"
+                android:singleLine="true"
+                android:textColor="@color/color_stroke"
+                android:textCursorDrawable="@color/color_stroke"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/toggleLayout"
+            android:layout_width="@dimen/search_oval_width"
+            android:layout_height="@dimen/search_oval_width"
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="20dp"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/ivCloseBarTop"
+                android:layout_width="@dimen/search_stroke_width"
+                android:layout_height="@dimen/search_stroke_height"
+                android:layout_gravity="center"
+                android:rotation="45"
+                android:src="@color/color_stroke"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ivCloseBarBottom"
+                android:layout_width="@dimen/search_stroke_width"
+                android:layout_height="@dimen/search_stroke_height"
+                android:layout_gravity="center"
+                android:rotation="-45"
+                android:src="@color/color_stroke"
+                android:visibility="gone" />
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

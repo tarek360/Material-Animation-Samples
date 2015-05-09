@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="@dimen/search_stroke_width"
+                android:color="@color/color_stroke" />
+
+            <solid android:color="@color/search_color_background" />
+            <corners android:radius="100dp" />
+        </shape>
+    </item>
+
+</layer-list>

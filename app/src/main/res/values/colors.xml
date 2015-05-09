@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>\
+
+    <!-- main default drawable -->
+    <color name="color_bg">#90000000</color>
+    <color name="color_stroke">#FFF</color>
+    <color name="search_color_background">#E000</color>
+
+
+</resources>

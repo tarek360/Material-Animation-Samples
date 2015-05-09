@@ -5,8 +5,8 @@
     android:id="@+id/cardView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:cardCornerRadius="4dp"
-    app:cardElevation="4dp"
+    app:cardCornerRadius="@dimen/blog_card_elevation"
+    app:cardElevation="@dimen/blog_card_elevation"
     app:cardUseCompatPadding="true">
 
     <RelativeLayout
@@ -15,8 +15,8 @@
 
         <ImageView
             android:id="@+id/imageThumb"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="@dimen/blog_image_thumb_dim"
+            android:layout_height="@dimen/blog_image_thumb_dim"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
