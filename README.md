@@ -2,7 +2,7 @@
 
 
 #Download Samples:
-[![](http://s25.postimg.org/l7tmfhxy7/get_it_on_google_play.jpg)](https://play.google.com/store/apps/details?id=com.tarek360.animationsamples)
+[![](http://s25.postimg.org/l7tmfhxy7/get_it_on_google_play.jpg)](https://play.google.com/store/apps/details?id=com.tarek360.aimationcourse)
 
 [or watch it on youtube](https://youtu.be/Yo0izprt7a4)
 
