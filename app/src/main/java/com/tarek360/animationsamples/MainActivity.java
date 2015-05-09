@@ -57,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
                 intent = new Intent(this, SearchWidgetActivity.class);
                 break;
 
+            case R.id.playPauseBtn:
+                intent = new Intent(this, PlayPauseActivity.class);
+                break;
+
             default:
                 intent = new Intent();
         }

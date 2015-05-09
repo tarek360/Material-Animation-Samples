@@ -5,7 +5,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.tarek360.animationsamples.MainActivity"
-    android:background="@drawable/bg">
+    android:background="#512DA8">
 
     <Button
         android:id="@+id/layoutTransitionBtn" android:text="Layout Transition" android:layout_width="wrap_content"
@@ -14,20 +14,39 @@
         android:textSize="25sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/forget_pass_btn_bg"
+        android:background="@drawable/button_default_bg"
         android:paddingRight="10dp"
         android:paddingLeft="10dp"
         android:onClick="onClick" />
 
     <Button
-        android:id="@+id/searchWidgetBtn" android:text="Search widget" android:layout_width="wrap_content"
+        android:id="@+id/searchWidgetBtn"
+        android:text="Search widget"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#fff"
         android:textSize="25sp"
-        android:background="@drawable/forget_pass_btn_bg"
+        android:background="@drawable/button_default_bg"
         android:paddingRight="10dp"
         android:paddingLeft="10dp"
         android:layout_below="@+id/layoutTransitionBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:onClick="onClick"/>
+
+
+
+    <Button
+        android:id="@+id/playPauseBtn"
+        android:text="Play Pause Morphing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:background="@drawable/button_default_bg"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/searchWidgetBtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="42dp"
         android:onClick="onClick"/>
