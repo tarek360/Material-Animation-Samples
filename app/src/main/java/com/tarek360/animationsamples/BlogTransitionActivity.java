@@ -83,7 +83,7 @@ public class BlogTransitionActivity extends AppCompatActivity {
             blog.setImageRes(drawable[i]);
             blog.setBackGroundColor(color[i]);
             blog.setTitle("Label " + i);
-            blog.setSubTitle("This is subTitle with number " + i);
+            blog.setSubTitle("This is subTitle with number " + i + " and some description here");
             mBlogList.add(blog);
         }
 
