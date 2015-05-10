@@ -11,7 +11,7 @@
 [![](https://github.com/tarek360/Material-Animation-Samples/raw/master/layout_transition.gif)](https://youtu.be/Yo0izprt7a4) [![](https://github.com/tarek360/Material-Animation-Samples/raw/master/play_pause.gif)](https://www.youtube.com/watch?v=UFdV7qysyZQ)
 
 #Samples:
-Samples in material animation will be added in the next two monthes.
+Samples in material animation will be added through the next two monthes.
 - Layout Material Transition
 - Play Pause Morphing
 - Expandable Search widget
