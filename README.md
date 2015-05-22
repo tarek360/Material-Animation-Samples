@@ -15,7 +15,7 @@ Samples in material animation will be added through the next two monthes.
 - Layout Material Transition
 - Play Pause Morphing
 - Expandable Search widget
-- more is coming
+- more is coming..
 
 #License
 
