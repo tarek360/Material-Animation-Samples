@@ -1,5 +1,6 @@
 # Material-Animation-Samples
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Material--Animation--Samples-brightgreen.svg?style=flat)](http://android-arsenal.com/details/3/1857)
 
 #Download Samples:
 [![](http://s25.postimg.org/l7tmfhxy7/get_it_on_google_play.jpg)](https://play.google.com/store/apps/details?id=com.tarek360.aimationcourse)
