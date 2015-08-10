@@ -107,8 +107,7 @@ public class PlayPauseDrawable extends Drawable {
     public void draw(Canvas canvas) {
 
         canvas.drawCircle(mBounds.centerX(), mBounds.centerY(), mBounds.centerX(), mBackgroundPaint);
-        Picture picture = new Picture() ;
-        picture.draw(canvas);
+
         canvas.save();
         canvas.rotate(180 * mRotation, (x(0) + x(1))/2, (y(0) + y(1))/2);
         canvas.drawLine(x(0), y(0), x(1), y(1), mLinePaint);
@@ -122,7 +121,6 @@ public class PlayPauseDrawable extends Drawable {
         canvas.save();
         canvas.rotate(180 * mRotation, (x(4) + x(5)) / 2, (y(4) + y(5)) / 2);
         canvas.drawLine(x(4), y(4), x(5), y(5), mLinePaint);
-        canvas.restore();
 
     }
 
